@@ -9,8 +9,11 @@ export default class extends Controller {
 
   greet(event){
     if(parseInt(this.numberTarget.value) > 100){
-      event.preventDefault();
-      return;
+      const response = window.confirm("Voce tem certeza que quer proceguir?")
+      if (response === false){
+        event.preventDefault();
+        return;
+      }
     }
     window.location.replace("/");
   }
