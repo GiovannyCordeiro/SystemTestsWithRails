@@ -43,10 +43,10 @@ gem "thruster", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
-  gem 'rspec-rails', '~> 6.1.0'
-  gem 'factory_bot_rails'
-  gem 'faker'
-  gem 'dotenv-rails'
+  gem "rspec-rails", "~> 6.1.0"
+  gem "factory_bot_rails"
+  gem "faker"
+  gem "dotenv-rails"
 
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false
@@ -56,9 +56,9 @@ group :development, :test do
 end
 
 group :test do
-  gem 'capybara'
+  gem "capybara"
   gem "capybara-screenshot"
-  gem 'cuprite'
+  gem "cuprite"
 end
 
 group :development do

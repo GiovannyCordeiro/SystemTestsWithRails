@@ -30,14 +30,14 @@ rescue ActiveRecord::PendingMigrationError => e
   abort e.to_s.strip
 end
 
-require 'capybara/rspec'
-require 'capybara/rails'
-require 'capybara/cuprite'
+require "capybara/rspec"
+require "capybara/rails"
+require "capybara/cuprite"
 
 Capybara.register_driver :cuprite do |app|
   Capybara::Cuprite::Driver.new(
     app,
-    window_size: [1200, 800],
+    window_size: [ 1200, 800 ],
     # Opções úteis para depuração
     inspector: true,
     headless: !ENV['HEADLESS'].in?(%w[n 0 no false]),
