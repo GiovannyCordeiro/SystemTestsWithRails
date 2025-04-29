@@ -32,7 +32,7 @@ end
 
 require 'capybara/rspec'
 require 'capybara/rails'
-require 'cuprite'
+require 'capybara/cuprite'
 
 Capybara.register_driver :cuprite do |app|
   Capybara::Cuprite::Driver.new(
