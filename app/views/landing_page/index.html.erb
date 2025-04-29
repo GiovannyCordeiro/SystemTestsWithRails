@@ -1,1 +1,7 @@
 <h2>Landing Page</h2>
+
+<div data-controller="hello">
+  <input type="text" name="name" id="input_text" data-hello-target="name" placeholder="name">
+  <input type="number" name="number" placeholder="number" id="input_number" data-hello-target="number">
+  <button id="Submit" data-action="click->hello#greet">Submit</button>
+</div>
