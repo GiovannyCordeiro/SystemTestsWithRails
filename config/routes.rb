@@ -11,4 +11,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  get 'landing_page', to: 'landing_page#index', as: :landing_page
 end
